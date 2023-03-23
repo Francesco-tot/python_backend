@@ -1,5 +1,9 @@
 import random
 
+def welcome():# This just for compiling in console or terminal
+    print("Welcome to ROCK PAPER SCISORS GAME!!!\n")
+    print("You will play with a computer, try to win\n")
+    print("*******************************************\n")
 
 def select_random_position(lista):
     value = random.choice(lista)
@@ -21,6 +25,7 @@ def user_option(lista):
 
 
 def main():
+    welcome()
     option_list = ["rock","paper","scisors"]
     dict_win = {'rock':'paper','paper':'scisors','scisors':'rock'}
     lifes_users = 3
